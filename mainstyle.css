@@ -12,6 +12,7 @@ body {
   margin-bottom:0px;
   margin-left:0px;
   margin-right:0px;
+  min-width: 400px;
 	background: #000000;
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.5s; /* Firefox < 16 */
@@ -20,6 +21,43 @@ body {
             animation: fadein 1.5s;
 
 }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	border-radius: 20px;
+}
+
+.button1 {
+    
+	
+	background-color: white;
+    color: #4CAF50;
+	border-radius: 20px;
+	border: 2px solid #4CAF50;
+	color: #4CAF50;
+	font-family: "Raleway";
+}
+
+.button1:hover {
+    background-color: #4CAF50; 
+    color: white; 
+    border: 2px solid #4CAF50;
+	border-radius: 20px;
+	
+	font-family: "Raleway";
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -79,6 +117,25 @@ body {
 }
 
 
+h4 {
+	text-align: center;
+	position: relative;
+	top: 80%;
+	font-family: Avalon, Avenir, "Raleway";
+	color: white;
+	margin: 0px;
+	opacity: 0.4;
+	
+
+	
+}
+
+h4:hover:not(.active) {
+ opacity: 1.0;
+	
+}
+
+
 
 
 h1 {
@@ -110,6 +167,8 @@ h3 {
 p {
 	margin: 0px;
 	margin-top: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 li {
@@ -141,7 +200,7 @@ li a:hover:not(.active) {
 
 
 .active {
-    background-color:#A7A7A7;
+    background-color:#f1f1f1;
 	color: black;
 }
 
