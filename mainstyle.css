@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 html {
-	background-color: black;
+	background-color: white;
 }
-
+* {
+	font-family:"Raleway";
+}
 body {
   padding: 0px;
   margin-top:-10px;
@@ -16,7 +18,7 @@ body {
         -ms-animation: fadein 1.5s; /* Internet Explorer */
          -o-animation: fadein 1.5s; /* Opera < 12.1 */
             animation: fadein 1.5s;
-`
+
 }
 
 @keyframes fadein {
@@ -52,14 +54,14 @@ body {
 	opacity: 85%;
 	margin:0px;
 	font-size: 10px;
-	height: 10px;
+	height: 30px;
 }
 .header {
-	 background: darkblue; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(darkblue, aqua); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(darkblue, aqua); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(darkblue, aqua); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(darkblue, aqua); /* Standard syntax */
+	 background: darkred; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(darkred, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(darkred, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(darkred, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(darkred, red); /* Standard syntax */
 	
 	height: 700px;
 	padding: 0px;
@@ -72,9 +74,10 @@ body {
 
 .main {
 	background-color: white;
-	font-family: "Avenir";
+	font-family: "Raleway";
 	color: black;
 }
+
 
 
 
@@ -82,7 +85,7 @@ h1 {
 	text-align: center;
 	position: relative;
 	top: 40%;
-	font-family: Avalon, Avenir, serif;
+	font-family: Avalon, Avenir, "Raleway";
 	color: white;
 	margin: 0px;
 }
@@ -91,14 +94,18 @@ h2 {
 	margin: 0;
 		margin-top: 0px;
 	padding-top:15px;
+	padding-bottom:15px;
 	text-align: center;
 	position: relative;
-	font-family: Avenir, Comic Sans MS, serif;
+	font-family: Avenir, "Raleway", serif;
 }
 
 h3 {
 	margin-left:20px;
 	margin-right: 20px;
+	font-weight: normal;
+	margin-bottom:0px;
+	font-family: "Raleway";
 }
 p {
 	margin: 0px;
@@ -108,8 +115,8 @@ p {
 li {
     float: left;
 	color: white;
-	font-family: Avalon;
-	font-size:12px;
+	font-family: "Raleway";
+	font-size:16px;
 	list-style-type: none;
 }
 
@@ -118,11 +125,12 @@ li a {
     color: white;
 
     text-align: center;
-    padding-right:15px;
-	padding-left:15px;
-	padding-top:10px;
-	padding-bottom:15px;
+    padding-right:25px;
+	padding-left:25px;
+	padding-top:14px;
+	padding-bottom:16px;
     text-decoration: none;
+	vertical-align: middle;
 }
 
 li a:hover:not(.active) {
@@ -135,4 +143,21 @@ li a:hover:not(.active) {
 .active {
     background-color:#A7A7A7;
 	color: black;
+}
+
+
+a {
+	color: #2300A9;
+	font-weight:bold
+}
+
+.footer {
+	
+	 background: darkred; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, darkred); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, darkred); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, darkred); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, darkredred); /* Standard syntax */
+	height:100px;
+	
 }
