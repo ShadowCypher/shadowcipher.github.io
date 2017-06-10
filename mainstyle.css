@@ -287,6 +287,7 @@ li {
 	font-family: "Raleway";
 	font-size:16px;
 	list-style-type: none;
+	cursor: pointer;
 	
 }
 
@@ -351,11 +352,12 @@ li a:hover:not(.active) {
 a {
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 
 .subscribe {
 	height: 60px;
-	width: 80px;
+	width: 60px;
 	-webkit-transition: width .2s; /* For Safari 3.1 to 6.0 */
     transition: width .2s; 
 	transition: height .2s;
@@ -367,8 +369,8 @@ a {
 }
 
 .subscribe:hover {
-	height: 80px;
-	width: 100px;
+	height: 65px;
+	width: 65px;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -376,3 +378,4 @@ a {
 a:hover {
 	font-weight: bold;
 }
+
