@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
----
-layout: page
-title: Sponsors
-permalink: /sponsor/
----
 
 <head>
 <link href="../mainstyle.css" type="text/css" rel="stylesheet">
@@ -16,46 +11,96 @@ permalink: /sponsor/
 <body>
 	
 	<div class="menubar">
-  
 	  <ul>
-    	<li><img src="../Resources/headlogo.png" href="/" height="40" width="56" style="margin-top: 10px"></li>
-	   	
-
-	    <li><a href="news.html" style="margin-top: 10px">News</a></li>
-	    <li><a href="contact.html" style="margin-top: 10px">Contact</a></li>
-	    <li><a href="about.html" style="margin-top: 10px" class="active">About</a></li>
+    	<li><img src="../Resources/headlogo.png" href="/" height="40px" width="56px" style="margin-top: 5px" class="imgfull"></li>
+	    <li><a href="../contact.html" style="margin-top: 15px">News</a></li>
+	    <li><a onclick="location.href='contact.html'" style="margin-top: 15px">Contact</a></li>
+	    <li><a href="about.html" style="margin-top: 15px" class="active">About</a></li>
+	    
       </ul>
 </div>
-	<div class="header">
-	  <h1>Hypercharged</h1>
-	  <h4><img src="../Resources/chevron.png" style="top: 50%"   height="60px" width="80px" onClick="href=#maintop;"></h4>
+	
+<div class="header">
+	
+<h1>Hypercharged</h1>
+<h4><a href="#maintop"><img src="Resources/chevron.png"  height="60px" width="80px"></a></h4>
+<a href="Contact/contact.html">
+<button class="button topbutton"  id="mainref">Contact Us</button>
+
+</a>    
 </div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	
+	function redirectURL(link) {
+		window.open(link);
+	}
+	
+	
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 	<div class="main">
 		<h2 id="maintop"><u>Welcome to the Official Hypercharged Page!</u></h2>
-		<center><p>Here, you can find behind-the-scenes looks at our production, and, besides that, our input on cars outside of our channel! Expect to see updates very soon.</p></center>
-		<center>
+		<center><p>Here, you can find behind-the-scenes looks at our production, and, besides that, our input on cars outside of our channel! Expect to see updates very soon.</p>
 		
-    
-		<img src="../Resources/GitHub-Mark.png" width="100px">
-			<br></br>
-		<button class="button button1" id="git1" onclick=redirect()>GitHub</button>
-		<br></br>
-		<h3>random stuff will go here</h3>
-		<br></br>
+		<img src="Resources/GitHub-Mark.png" width="100px">
+		<br>
+		<button class="button button1" id="git1" onclick="redirectURL(github.com)">GitHub</button>
+		<br>
+		<h3>random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here</h3>
+		<br>
+		<br>
+		
+		
+		<center><iframe src="https://www.youtube.com/embed/cmDoUhnfC3Y"
+   width="560" height="315"  frameborder="2" allowfullscreen></iframe></center>
+		<br>
+ 		<img src="Resources/subscribe.png" name="sub" height="60px" width="80px" class="subscribe"/> 
+ 		
+		<br>
+		<br>
+		
 		</center>
 		
 	</div>
 	<div class="footer">
-		<a href="about.html">About</a>
-		<br></br>
-		<a href="contact.html">Contact</a>
-		<br></br>
-		<a href="contact.html">YouTube</a>
-		<br></br>
-		<a href="contact.html">GitHub</a>
-		<br></br>
+		<a href="/about.html">About</a>
+		<br>
+		<a href="/contact.html">Contact</a>
+		<br>
+		<a href="/contact.html">YouTube</a>
+		<br>
+		<a href="/contact.html">GitHub</a>
+		<br>
 	</div>
+
 	<div class="external">
+		
 		<strong>© Hypercharged 2017</strong>
 	</div>
 </body>
