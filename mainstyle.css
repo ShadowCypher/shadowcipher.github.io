@@ -332,7 +332,6 @@ li a:hover:not(.active) {
 	font-family: "Raleway", "Avenir";
 	color: white;
 	line-height: 25px;
-	
 	font-weight: normal;
 }
 .external {
@@ -357,17 +356,21 @@ a {
 .subscribe {
 	height: 60px;
 	width: 80px;
-	-webkit-transition: width .1s; /* For Safari 3.1 to 6.0 */
-    transition: width .1s; 
-	transition: height .1s;
+	-webkit-transition: width .2s; /* For Safari 3.1 to 6.0 */
+    transition: width .2s; 
+	transition: height .2s;
+	margin-bottom: auto;
 	display: inline-block;
-	margin-top:0px;
+	margin-top: auto;
+	
 	
 }
 
 .subscribe:hover {
 	height: 80px;
 	width: 100px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 a:hover {
