@@ -20,7 +20,6 @@ body {
   margin-bottom:0px;
   margin-left:0px;
   margin-right:0px;
-  min-width: 400px;
   overflow: scroll;
 	background: #000000;
 -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -117,17 +116,6 @@ body {
 	-webkit-transition-duration: 0.4s;
 }
 
-img {
-	opacity: 0.9;
-}
-img:hover {
-	-webkit-animation: fadein2 1.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein2 1.5s; /* Firefox < 16 */
-        -ms-animation: fadein2 1.5s; /* Internet Explorer */
-         -o-animation: fadein2 1.5s; /* Opera < 12.1 */
-            animation: fadein 1.5s;
-	
-}
 
 @keyframes fadein2 {
     from { opacity: 0.9; }
@@ -200,13 +188,48 @@ hr.style1 {
 
 .menubar {
 	opacity: 85%;
+	width: 100vw;
 	background-color: white;
 	margin:0px;
-	font-size: 20px;
-	min-height: 10vh;
+	font-size: 30px;
+	height: 80px;
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center;
+}
+
+@media screen and (max-width : 800px ){
+	li {
+	display: none;
+	}
+	.mobile {
+		display: inline-block;
+		width: 100%;
+	}
+	.pages {
+		display:none;
+	}
+}
+@media screen and (min-width : 800px ){
+	.td1 {
+		
+		display: none !important;
+		
+	}
+	.td2 {
+		
+		display: none !important;
+	}
+	
+	tr {
+		display: none !important;
+	}
+	.mobile {
+		display: none;
+	}
+	.pages {
+		display:none!important;
+	}
 }
 .header {
 	 background: black; /* For browsers that do not support gradients */
@@ -217,7 +240,7 @@ hr.style1 {
 	
 	height: 700px;
 	padding: 0px;
-	margin-top: 30px;
+	
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0px;
@@ -290,9 +313,11 @@ li {
     float: left;
 	color: black;
 	font-family: "Ubuntu";
-	font-size:16px;
+	font-size: 20px;
 	list-style-type: none;
 	cursor: pointer;
+	
+     
 	
 }
 
@@ -304,9 +329,8 @@ li a {
 	padding-left:25px;
 	font-family: "Ubuntu";
     text-decoration: none;
-	margin-top: auto;
-	margin-bottom: auto;
 	display: table;
+	margin-top: 10px;
 }
 
 li a:hover:not(.active) {
@@ -439,4 +463,68 @@ a:hover {
 	padding-top:16px;
 	padding-bottom: 16px;
 	transition: 400ms ease all;
+}
+
+.tr {
+ 	top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+	background-color: aqua;
+}
+
+.td1 {
+	
+	float: left;
+	display: table-cell;
+	height: 60px;
+	width: 50px;
+	
+}
+.td2 {
+	float: left;
+	display: table-cell;
+	padding-left: 100px;
+}
+
+.menubar2 {
+	opacity: 85%;
+	width: 100vw;
+	background-color: white;
+	margin:0px;
+	font-size: 30px;
+	height: 20vh;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	
+}
+
+#nav {
+	
+}
+
+.pages {
+	width:100%;
+	text-align: center;
+	background-color: lightgray;
+}
+
+.td3 {
+	text-align: center;
+	height: 30px;
+	font-size: 20px;
+}
+
+.td3:hover {
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+}
+
+
+table, th, td {
+    color: darkslategray;
+    width: 100%;
 }

@@ -4,27 +4,63 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" >
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <meta charset="UTF-8">
 <head>
 <title>Hypercharged - Main Page</title>
 
 </head>
 <body>
-	
-	<div class="menubar">
+  <div class="menubar">
+  		<tr>
+  		
+  		<div class="mobile">
+		<td class="td1"><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-top: 5px" class="imgfull"></td>
+		
+		<td class="td2"><img src="Resources/navbar.png" width="35" height="auto" id="nav" /></td>
+ 		 <script>
+    		$( "#nav" ).click(function() {
+				$( ".pages" ).toggle();
+			});
+    	</script>
+  		</div>
+	  	</tr>
+	  	
+		
+ 	  
+  	  <div class="fullmenu">
 	  <ul>
-    	
+    	<li><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-bottom: 15px" class="imgfull"></li>
 	    <li><a onclick="location.href='news.html'" >News</a></li>
 	    <li><a onclick="location.href='contact.html'" >Contact</a></li>
-	    <li><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-top: 5px" class="imgfull"></li>
+	    
 	    <li><a onclick="location.href='about.html'" >About</a></li>
 	    <li><a onclick="location.href='shop.html'" >Shop</a></li>
       </ul>
-</div>
+	</div>
+	 </div>
+	 
 	
 <div class="header">
-	
+	<div class="pages">
+ 	<table>
+ 		
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='news.html'">News</td>
+	 	</tr>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='contact.html'">Contact</td>
+	 	</tr>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='about.html'">About</td>
+	 	</tr>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='shop.html'" >Shop</td>
+	 	</tr>
+	 	
+	 	
+	 	</table>
+	 </div>	
 <h1>Hypercharged</h1>
 <h4><a href="#maintop"><img src="Resources/chevron.png"  height="60px" width="80px"></a></h4>
 
@@ -36,9 +72,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 	
-	function redirectURL(link) {
-		window.open(link);
-	}
 	
 	
 $(document).ready(function(){
@@ -82,7 +115,7 @@ $(document).ready(function(){
 		<div class="slogan">That's what Hypercharged is all about.</div>
 	
 		<center><iframe src="https://www.youtube.com/embed/cmDoUhnfC3Y"
-   width="560" height="315"  frameborder="2" allowfullscreen></iframe></center>
+   width="99%" height="99%;"  frameborder="2" allowfullscreen></iframe></center>
 		<br>
  		<img src="Resources/subscribe.png" name="sub"  onclick="location.href='https://goo.gl/fxmz9O'" alt="subscribebutton" class="subscribe" >
  		<img src="Resources/instagram.png" name="instag" alt="instagram" class="subscribe" onclick="location.href='https://www.instagram.com/hyperchargedvideos/'">
