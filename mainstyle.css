@@ -202,8 +202,11 @@ hr.style1 {
 	opacity: 85%;
 	background-color: white;
 	margin:0px;
-	font-size: 10px;
-	height: 50px;
+	font-size: 20px;
+	min-height: 80px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
 }
 .header {
 	 background: black; /* For browsers that do not support gradients */
@@ -294,16 +297,16 @@ li {
 }
 
 li a {
-    display: block;
+ 
     color: black;
-
     text-align: center;
     padding-right:25px;
 	padding-left:25px;
 	font-family: "Ubuntu";
-	transform(-50% 0%);
     text-decoration: none;
-	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: table;
 }
 
 li a:hover:not(.active) {
