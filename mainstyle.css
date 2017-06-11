@@ -1,4 +1,6 @@
+@import "compass/css3";
 @charset "UTF-8";
+
 /* CSS Document */
 
 html {
@@ -284,7 +286,7 @@ p {
 li {
     float: left;
 	color: black;
-	font-family: "Raleway";
+	font-family: "Ubuntu";
 	font-size:16px;
 	list-style-type: none;
 	cursor: pointer;
@@ -298,22 +300,23 @@ li a {
     text-align: center;
     padding-right:25px;
 	padding-left:25px;
-	
+	font-family: "Ubuntu";
 	transform(-50% 0%);
     text-decoration: none;
 	vertical-align: middle;
 }
 
 li a:hover:not(.active) {
-    font-weight: bold;
+    font-weight: 700;
 	color: black;
+	font-family: "Ubuntu";
 	
 	
 }
 
 
 .active {
-	font-weight: bold;
+	font-weight: 700;
     background-color:#FFFFFF;
 	color: black;
 	
@@ -358,24 +361,79 @@ a {
 .subscribe {
 	height: 60px;
 	width: 60px;
-	-webkit-transition: width .2s; /* For Safari 3.1 to 6.0 */
-    transition: width .2s; 
-	transition: height .2s;
-	margin-bottom: auto;
+	
+	margin-bottom: 20px;
 	display: inline-block;
-	margin-top: auto;
+	margin-top: 20px;
+	transition: 400ms ease all;
 	
 	
 }
 
 .subscribe:hover {
-	height: 65px;
-	width: 65px;
-	margin-top: auto;
-	margin-bottom: auto;
+	transform: rotate(360deg);
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 a:hover {
 	font-weight: bold;
 }
 
+
+
+.progressbar {
+	padding-top: 10px;
+	margin-top: 10px;
+	width:30%;
+	height: 40px;
+	font-size: 25px;
+	color: crimson;
+	text-align: center;
+	background-color: white;
+	-webkit-transition: width .2s;
+	/* For Safari 3.1 to 6.0 */
+    transition: width .2s; 
+	font-family: "Source Code Pro", monospace;
+}
+
+.progressbar:hover {
+	width: 75%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: black;
+	color: #30FF00;
+	font-family: "Source Code Pro", monospace;
+	transition: 400ms ease all;
+	transition: background-color 400ms;
+}
+
+.progressbar2 {
+	width: 75%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: black;
+	color: #30FF00;
+	font-family: "Source Code Pro", monospace;
+	font-size: 25px;
+	height: 40px;
+	
+	
+}
+
+
+
+.slogan {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	visibility: visible;
+}
+
+.slogan:hover {
+	visibility: visible;
+	font-style: italic;
+	font-size: 40px;
+	padding-top:16px;
+	padding-bottom: 16px;
+	transition: 400ms ease all;
+}
