@@ -541,3 +541,7 @@ table, th, td {
     -o-transform: rotate(90deg);  
     transform: rotate(90deg);  
 }
+
+#signout {
+	display: none;
+}
