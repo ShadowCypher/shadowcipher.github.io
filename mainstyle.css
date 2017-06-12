@@ -543,5 +543,8 @@ table, th, td {
 }
 
 #signout {
+	display: none;
+}
+#signin {
 	display: inline-block;
 }

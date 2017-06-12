@@ -30,10 +30,7 @@
 				$("#nav").toggleClass('rotateClick');
 			});
 			 
-			$("#signout").click(function() {
-				document.getElementById("#signout").style.color = "green";
-				document.getElementById("#signout").innerHTML = "Sign In";
-			}
+			
     	</script>
   		</div>
 	  	</tr>
@@ -48,6 +45,7 @@
 	    
 	    <li><a onclick="location.href='about.html'" >About</a></li>
 	    <li><a onclick="location.href='shop.html'">Shop</a></li>
+	    <li id="signin"><a onclick="signIn();" style="color: forestgreen">Sign In</a></li>
 	    <li id="signout"><a onclick="signOut();" style="color: darkred">Sign Out</a></li>
       </ul>
 	</div>
@@ -139,13 +137,16 @@ $(document).ready(function(){
   				console.log('Name: ' + profile.getName());
 				console.log('Image URL: ' + profile.getImageUrl());
 				console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-				
+				document.getElementById("#signin").display= "none"
+				document.getElementById("#signout").display= "inline-block"
 			}	
 			
 			function signOut() {
     			var auth2 = gapi.auth2.getAuthInstance();
     			auth2.signOut().then(function () {
       			console.log('User signed out.');
+				document.getElementById("#signout").display= "none"
+				document.getElementById("#signin").display= "inline-block"
     			});
   		}
 			
