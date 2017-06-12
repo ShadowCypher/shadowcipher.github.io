@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	
+}
+
+* {
+	font-family:"Raleway", "Avenir";
+}
+
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+
+body {
+  padding: 0px;
+  margin-top:-10px;
+  margin-bottom:0px;
+  margin-left:0px;
+  margin-right:0px;
+  min-width: 400px;
+  height: 100%
+  overflow: scroll;
+  background-color: white;
+-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+#wrap {
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	border-radius: 20px;
+	
+}
+
+.topbutton {
+	background-color: transparent;
+    
+	border-radius: 30px;
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	font-family: "Raleway","Avenir";
+	text-align: center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	display: table-cell;
+	font-weight: bold;
+	
+}
+
+.topbutton:hover {
+	background-color: white;
+    
+	border-radius: 30px;
+	border: 2px solid #FFFFFF;
+	color: black;
+	font-family: "Raleway","Avenir";
+
+}
+
+.fading {
+    height: 100%;
+    width: 100%;
+    background: black;
+    animation: fading 15s infinite;
+    -webkit-animation: fading 15s infinite;
+    border-radius:5px;
+}
+.fading img{
+    width: 100%;
+	height: 100%;
+    animation: opacityfading 15s infinite;
+    -webkit-animation: opacityfading 15s infinite;
+    margin: 30px;
+}
+@keyframes fading {
+    0%   { background: black; }
+    20%  { background: red; }
+    40%  { background: yellow; }
+	60%  {background: green;}
+	80%  {background: blue;}
+    100% { background: black; }
+}
+
+@-webkit-keyframes fading {
+    0%   { background: black; }
+    20%  { background: red; }
+    40%  { background: yellow; }
+	60%  {background: green;}
+	80%  {background: blue;}
+    100% { background: black; }
+}
+@keyframes opacityfading {
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    40%  { opacity: 0; }
+	60%  {opacity: 1;}
+	80%  {opacity 0;}
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes opacityfading {
+     0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    40%  { opacity: 0; }
+	60%  {opacity: 1;}
+	80%  {opacity 0;}
+    100% { opacity: 1; }
+}
+
+input
+{
+   -moz-border-radius: 15px;
+  border-radius: 20px;
+    border-radius: 1px solid white;
+    padding:5px;
+	text-align: center;
+	position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	display: table-cell;
+	font-weight: bold;
+	height: 25px;
+	width: 150px;
+	font-family:"Raleway";
+	
+}
+
+h1 {
+    margin-left:auto;
+	margin-right: auto;
+	margin-top: 20vh;
+	
+}
+html {
+	animation: fading 15s infinite;
+    -webkit-animation: fading 15s infinite;
+    border-radius:5px;
+	{

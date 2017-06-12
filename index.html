@@ -5,7 +5,9 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <script src="js/jquery-1.11.3.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="viewport" content="width=device-width"/>
+<meta name="google-signin-client_id" content="810878558403-nqh57b69ujjjhkucltgit0l69blu8hjr.apps.googleusercontent.com">
 <meta charset="UTF-8">
 <head>
 <title>Hypercharged - Main Page</title>
@@ -19,7 +21,10 @@
 		<td class="td1"><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-top: 5px" class="imgfull"></td>
 		
 		<td class="td2"><img src="Resources/navbar.png" width="35" height="auto" id="nav" /></td>
+		 
  		 <script>
+		
+		
     		$( "#nav" ).click(function() {
 				$( ".pages" ).toggle();
 				$("#nav").toggleClass('rotateClick');
@@ -38,6 +43,7 @@
 	    
 	    <li><a onclick="location.href='about.html'" >About</a></li>
 	    <li><a onclick="location.href='shop.html'" >Shop</a></li>
+	    
       </ul>
 	</div>
 	 </div>
@@ -120,7 +126,18 @@ $(document).ready(function(){
 		<br>
  		<img src="Resources/subscribe.png" name="sub"  onclick="location.href='https://goo.gl/fxmz9O'" alt="subscribebutton" class="subscribe" >
  		<img src="Resources/instagram.png" name="instag" alt="instagram" class="subscribe" onclick="location.href='https://www.instagram.com/hyperchargedvideos/'">
- 		
+ 		<img src="Resources/twitteric.png" name="twitt" alt="instagram" class="subscribe" onclick="location.href='404page.html'">
+ 		<script>
+			function onSignIn(googleUser) {
+  				var profile = googleUser.getBasicProfile();
+  				console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  				console.log('Name: ' + profile.getName());
+				console.log('Image URL: ' + profile.getImageUrl());
+				console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			}	
+			
+		</script>
+ 		<div class="g-signin2" data-onsuccess="onSignIn"></div>
 		<br>
 		<br>
 		
