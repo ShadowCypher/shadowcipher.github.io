@@ -211,6 +211,7 @@ hr.style1 {
 	}
 	.header {
 		height: 820px;
+		
 	}
 }
 @media screen and (min-width : 800px ){
@@ -415,8 +416,7 @@ a:hover {
 .progressbar {
 	padding-top: 10px;
 	margin-top: 10px;
-	width:30%;
-	height: 40px;
+	width:80%;
 	font-size: 25px;
 	color: crimson;
 	text-align: center;
@@ -428,7 +428,7 @@ a:hover {
 }
 
 .progressbar:hover {
-	width: 75%;
+	width: 95%;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-color: black;
@@ -439,14 +439,14 @@ a:hover {
 }
 
 .progressbar2 {
-	width: 75%;
+	width: 95%;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	background-color: black;
 	color: #30FF00;
 	font-family: "Source Code Pro", monospace;
 	font-size: 25px;
-	height: 40px;
+	
 	
 	
 }
@@ -489,27 +489,17 @@ a:hover {
 	padding-left: 100px;
 }
 
-.menubar2 {
-	opacity: 85%;
-	width: 100vw;
-	background-color: white;
-	margin:0px;
-	font-size: 30px;
-	height: 20vh;
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center;
-	
-}
+
 
 #nav {
-	
+	transition: 400ms ease all;
 }
+
 
 .pages {
 	width:100%;
 	text-align: center;
-	background-color: lightgray;
+	background-color: white;
 }
 
 .td3 {
@@ -519,15 +509,35 @@ a:hover {
 }
 
 .td3:hover {
+	transition: 400ms ease all;
 	font-weight: bold;
+}
+
+tr:hover {
+	transition: 400ms ease all;
+	background-color: #E7E7E7;
 }
 
 table {
 	width: 100%;
+	-webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .8s; /* Firefox < 16 */
+        -ms-animation: fadein .8s; /* Internet Explorer */
+         -o-animation: fadein .8s; /* Opera < 12.1 */
+            animation: fadein .8s;
+
 }
 
 
 table, th, td {
-    color: darkslategray;
+    color: #090909;
     width: 100%;
+}
+
+.rotateClick {
+    -webkit-transform: rotate(90deg);  
+    -moz-transform: rotate(90deg);  
+    -ms-transform: rotate(90deg);  
+    -o-transform: rotate(90deg);  
+    transform: rotate(90deg);  
 }
