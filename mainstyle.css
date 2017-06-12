@@ -209,6 +209,9 @@ hr.style1 {
 	.pages {
 		display:none;
 	}
+	.header {
+		height: 820px;
+	}
 }
 @media screen and (min-width : 800px ){
 	.td1 {
