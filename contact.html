@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-<head>
 <link href="mainstyle.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" >
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <script src="js/jquery-1.11.3.min.js"></script>
+<meta name="description" content="Welcome to Hypercharged's official website! Besides cars displayed on our channel, this is a gateway to one-on-one communication with the very creators of the channel!" />
 <meta name="viewport" content="width=device-width"/>
 <meta charset="UTF-8">
 <head>
@@ -45,7 +44,7 @@
 	 </div>
 	 
 	
-<div class="header" style="background:linear-gradient(blue, aqua)">
+
 	<div class="pages">
  	<table>
  		
@@ -65,16 +64,20 @@
 	 	
 	 	</table>
 	 </div>	
-<h1>Contact Us</h1>
-<h4><a href="#maintop"><img src="Resources/chevron.png"  height="60px" width="80px"></a></h4>
+	 <div class="header">
+		 <script>
+		 	 var random1="#"+((1<<24)*Math.random()|0).toString(16);
+			 var random2="#"+((1<<24)*Math.random()|0).toString(16);	
+			 $('.header').css({'background-image': 'linear-gradient(to right,'+ random1 +","+random2+")"});
+		 </script>
+		<h1>Contact Us</h1>
+		<h4><a href="#maintop"><img src="Resources/chevron.png"  height="60px" width="80px"></a></h4>
   
-</div>
+	</div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
-	
-$(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

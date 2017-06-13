@@ -99,7 +99,7 @@ body {
 @keyframes fading {
     0%   { background: black; }
     20%  { background: red; }
-    40%  { background: yellow; }
+    40%  { background: gold; }
 	60%  {background: green;}
 	80%  {background: blue;}
     100% { background: black; }
@@ -108,7 +108,7 @@ body {
 @-webkit-keyframes fading {
     0%   { background: black; }
     20%  { background: red; }
-    40%  { background: yellow; }
+    40%  { background: gold; }
 	60%  {background: green;}
 	80%  {background: blue;}
     100% { background: black; }

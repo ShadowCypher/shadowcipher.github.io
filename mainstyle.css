@@ -565,6 +565,19 @@ table.centered {
 }
 
 .shopdes {
-	margin-bottom:20px;
-	font-family: "Raleway";
+	margin-bottom:10px;
+	font-family: "Ubuntu";
+	
+}
+
+.shopnow {
+	background-color:transparent;
+	border: red solid 3px;
+	color: red;
+}
+
+.shopnow:hover {
+	background-color:red;
+	border: red solid 3px;
+	color: white;
 }
