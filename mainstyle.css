@@ -1,7 +1,7 @@
-@import "compass/css3";
 @charset "UTF-8";
 
-/* CSS Document */
+
+/* CSS Document for 99% of pages on Hypercharged, currently not in 404 Page. .htaccess support will be added later*/
 
 html {
 	background-color: black;
@@ -239,14 +239,13 @@ hr.style1 {
     background: -o-linear-gradient(black, #1B1B1B); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(black, #1B1B1B); /* For Firefox 3.6 to 15 */
     background: linear-gradient(black, #1B1B1B); /* Standard syntax */
-	
 	height: 700px;
 	padding: 0px;
 	
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 0px;
-	animation: rotate
+	animation: rotate;
 }
 
 .main {
@@ -523,11 +522,10 @@ table {
         -ms-animation: fadein .8s; /* Internet Explorer */
          -o-animation: fadein .8s; /* Opera < 12.1 */
             animation: fadein .8s;
-
 }
 
 
-table, th,  {
+table, th  {
     color: #090909;
     width: 85%;
 }
@@ -585,4 +583,10 @@ table.centered {
 	background-color:red;
 	border: red solid 3px;
 	color: white;
+	
+	
+}
+
+.external:hover {
+	cursor: pointer;
 }
