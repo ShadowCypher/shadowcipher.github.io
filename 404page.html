@@ -18,16 +18,13 @@
       </h1>
       <h3 style="color: white;">The URL you have requested returns an error.</h3>
 	</center>
-<center><button class="button topbutton" input type="submit" onClick="location.href='index.html'">Home > </button></center>
+	<script>
+	function prevPage() {
+	window.history.back();
+	}
+	</script>
+<center><button class="button topbutton" input type="submit" onClick="prevPage()">Previous Page </button></center>
 </div>
-<script>
-
-var myInput = document.getElementById("customx");
-if (customx.value == "21") {
-	alert("dank meme");
-}
-
-</script>
 
 
 
