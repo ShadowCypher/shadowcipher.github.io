@@ -225,9 +225,7 @@ hr.style1 {
 		display: none !important;
 	}
 	
-	tr {
-		display: none !important;
-	}
+
 	.mobile {
 		display: none;
 	}
@@ -531,7 +529,15 @@ table {
 
 table, th, td {
     color: #090909;
-    width: 100%;
+    width: 50%;
+}
+
+table.centered {
+	margin-left:auto; 
+    margin-right:auto;
+	border-collapse: separate;
+	border-spacing: 20%;
+	
 }
 
 .rotateClick {
@@ -542,9 +548,23 @@ table, th, td {
     transform: rotate(90deg);  
 }
 
-#signout {
-	display: none;
+.item {
+	height:300px;
+	margin-left:auto; 
+    margin-right:auto;
+	display: table-cell;
+	text-align: center;
+	border: lightgray 5px solid;
+	border-radius: 15px;
 }
-#signin {
+
+.shopimg {
 	display: inline-block;
+  	margin-top: 20px;
+	margin-bottom: auto;
+}
+
+.shopdes {
+	margin-bottom:20px;
+	font-family: "Raleway";
 }
