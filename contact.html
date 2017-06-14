@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="base64.js"></script>
 <meta name="description" content="Welcome to Hypercharged's official website! Besides cars displayed on our channel, this is a gateway to one-on-one communication with the very creators of the channel!" />
 <meta name="viewport" content="width=device-width"/>
 <meta charset="UTF-8">
@@ -104,23 +105,26 @@
 </script>
 
 	<div class="main">
-		<h2 id="maintop"><u>Welcome to the Official Hypercharged Contact Page!</u></h2>
-		<center><p>This site's robot.txt doesn't work... jk jk just trolling.</p>
-		
-		<img src="Resources/GitHub-Mark.png" width="100px">
-		<br>
-		<button class="button button1" id="git1" onclick="redirectURL(github.com)">GitHub</button>
-		<br>
-		<h3>random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here random stuff will go here</h3>
-		<br>
-		<br>
-		
-		
-		<center><iframe src="https://www.youtube.com/embed/cmDoUhnfC3Y"
-   width="auto" height="auto;"  frameborder="2" allowfullscreen></iframe></center>
-		<br>
- 		<img src="Resources/subscribe.png" name="sub" height="60px" width="80px" class="subscribe"/> 
- 		
+		<h2 id="maintop" ><u>Contact Form:</u></h2>
+		<center><p style="border: 0px solid white;">
+		<form action="myprocessingscript.php" method="POST">
+			<fieldset style="border:0px solid white;">
+			<br>
+			Email:
+			<br>
+			<input type="text" name="email" value="example@example.com" style="text-align: center; font-size: 18px; width: 33%;" id="txtName"></input>
+			<br>
+			<br>
+			Suggestion/Contact:
+			<br>
+			<textarea name="paragraph_text" name="fileWrite" cols="50" rows="10" type="text" name="submission"></textarea>
+			<br>
+			<br>
+			<button class="button shopnow"  style="width: 33%;" id="idk" input type="submit" onClick="writeToFile(document.getElementById('item').value, document.getElementById('name').value, document.getElementById('time').value)">SUBMIT FORM</button>
+			</fieldset>
+		</form>
+		</p>
+
 		<br>
 		<br>
 		
