@@ -118,14 +118,18 @@
 			<br>
 			Suggestion/Contact:
 			<br>
-			<textarea name="paragraph_text" placeholder="Hello world! This is a paragraph, but not one that you'd want to send, since it's meaningless. Please refrain from spam, as you will be blocked." cols="auto" rows="10" type="text" name="submission" style="font-size:20px;"></textarea>
+			<textarea name="paragraph_text" placeholder="Hello world! This is a paragraph, but not one that you'd want to send, since it's meaningless. Please refrain from spam, as you will be blocked." cols="auto" rows="auto" type="text" name="submission" style="font-size:20px;"></textarea>
 			<br>
 			<br>
-			<button class="button shopnow"  style="width: 33%;" id="idk" input type="submit" onClick="location.href='contact'">SUBMIT FORM</button>
+			<button class="button shopnow"  style="width: 33%; text-align: center;" id="idk" input type="submit" onClick="location.href='contact'">SUBMIT FORM</button>
 			<input type="hidden" name="_next" value="//shadowcypher.github.io/shadowcipher.github.io/contact" />
 			<script>
     		var contactform =  document.getElementById('contactform');
     		contactform.setAttribute('action', '//formspree.io/' + 'thelegobricktech' + '@' + 'gmail' + '.' + 'com');
+				
+				$('#idk').click(function() {
+					alert("Your form has been submitted!")
+				}
 			</script>
 			</fieldset>
 		</form>
