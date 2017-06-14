@@ -108,7 +108,7 @@
 	<div class="main">
 		<h2 id="maintop" ><u>Contact Form:</u></h2>
 		<center><p style="border: 0px solid white;">
-		<form action="http://formspree.io/thelegobricktech@gmail.com" method="POST">
+		<form id="contactform" method="POST">
 			<fieldset style="border:0px solid white;">
 			<br>
 			Email:
@@ -122,6 +122,11 @@
 			<br>
 			<br>
 			<button class="button shopnow"  style="width: 33%;" id="idk" input type="submit" onClick="location.href='contact'">SUBMIT FORM</button>
+			<input type="hidden" name="_next" value="//shadowcypher.github.io/shadowcipher.github.io/contact" />
+			<script>
+    		var contactform =  document.getElementById('contactform');
+    		contactform.setAttribute('action', '//formspree.io/' + 'thelegobricktech' + '@' + 'gmail' + '.' + 'com');
+			</script>
 			</fieldset>
 		</form>
 		</p>
