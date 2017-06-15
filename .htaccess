@@ -13,7 +13,7 @@ RewriteCond %\{REQUEST_FILENAME\} !-f
 
 \f0\fs36\fsmilli18200 RewriteRule ^([^\\.]+)$ $1.html [NC,L]
 \f1\fs56 \
-\f0\fs36\ErrorDocument 404 http://www.shadowcypher.github.io/shadowcipher.github.io/404page
+\f0\fs36\fsmilli18200 ErrorDocument 404 http://www.shadowcypher.github.io/shadowcipher.github.io/404page
 }
 
 
