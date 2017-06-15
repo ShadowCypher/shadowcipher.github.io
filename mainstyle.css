@@ -508,6 +508,7 @@ a:hover {
 .td3:hover {
 	transition: 400ms ease all;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 tr:hover {
@@ -525,7 +526,7 @@ table {
 }
 
 
-table, th  {
+table, th, tr  {
     color: #090909;
     width: 100%;
 }
@@ -590,3 +591,5 @@ table.centered {
 .external:hover {
 	cursor: pointer;
 }
+
+
