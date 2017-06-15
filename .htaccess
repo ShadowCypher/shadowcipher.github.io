@@ -16,4 +16,4 @@ RewriteCond %\{REQUEST_FILENAME\} !-f
 
 }
 
-ErrorDocument 404 http://www.shadowcypher.github.io/shadowcipher.github.io/404page
+
