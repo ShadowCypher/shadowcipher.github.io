@@ -31,10 +31,15 @@
 	
 	
         window.onload = function(){
-          	var u = ["the limit as x->0 for 1/x.", "1/0.", "undefined.", "f(URL)↑.", "like the var 'error' on this page"];
-			var randomM = u[Math.floor(Math.random()*5)];
+          	var u = ["the limit as x->0 for 1/x.", "1/0.", "undefined.", "f(URL)↑.", "like the var 'error' on this page", "According to science, a bee shouldn't be able to fly.", "Why does this page exist?"];
+			var randomM = u[Math.floor(Math.random()*7)];
 			var randomS = "The URL you have requested is " + randomM;
+			if (randomM == "According to science, a bee shouldn't be able to fly." || "Why does this page exist?") {
+				document.getElementById("lol").innerHTML = randomM;
+			}
+			else {
 			document.getElementById("lol").innerHTML = randomS;
+			}
         };
     </script>
 <center><button class="button topbutton" input type="submit" onClick="prevPage()">Previous Page </button></center>
