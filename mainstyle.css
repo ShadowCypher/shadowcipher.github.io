@@ -592,4 +592,7 @@ table.centered {
 	cursor: pointer;
 }
 
+.tda {
+	display: table-cell;
+}
 
