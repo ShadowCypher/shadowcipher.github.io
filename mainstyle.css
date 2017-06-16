@@ -393,7 +393,7 @@ a:hover {
 .td2 {
   float: left;
   display: table-cell;
-  padding-left: 100px; }
+  padding-left: 5px; }
 
 #nav {
   transition: 400ms ease all; }
