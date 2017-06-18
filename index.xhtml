@@ -27,24 +27,29 @@
   		
   		
   		<div class="mobile">
-  		<tr>
+  		<table class="empty">
+  		<tr class="empty">
 		<td class="td1"><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40" width="56" style="margin-top: 15px" class="imgfull" alt="logo"/></td>
 		
-		<td class="td2"><img src="Resources/navbar.png" style="margin-top: 15px" width="35" height="35" id="nav" alt="NAV"/></td>
-		
- 		 <script>
-		
-		
-    		$( "#nav" ).click(function() {
-				$( ".pages" ).toggle();
-				$("#nav").toggleClass('rotateClick');
-			});
-			 
+		<td class="td2" id="td2">
+			<object id="c1" class="centerline" ></object>
+			<object id="c2" class="centerline2"></object>
+			</td>
 			
-    	</script>
+		 
+ 	
   		
 	  	</tr>
-	  	
+			</table>
+	  	<script>
+$(document).ready(function(){
+    $("table").click(function(){
+        $(".centerline").toggleClass("centerline4");
+		$(".centerline2").toggleClass("centerline24");
+		$(".pages").toggle();
+    });
+});
+</script>
 	  	</div>
 	  	 <div class="fullmenu">
 	  <ul>
@@ -100,6 +105,10 @@
 	
 $(document).ready(function(){
   // Add smooth scrolling to all links
+	
+
+	
+	
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior

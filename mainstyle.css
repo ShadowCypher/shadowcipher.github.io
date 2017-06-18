@@ -401,7 +401,9 @@ a:hover {
 .pages {
   width: 100%;
   text-align: center;
-  background-color: white; }
+  background-color: white; 
+	transition: 400ms ease all''
+}
 
 .td3 {
   text-align: center;
@@ -492,3 +494,49 @@ iframe {
 #nav {
 	margin-top: 15px;
 }
+
+
+.centerline {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	width: 50px;
+	height: 5px;
+	background-color: black;
+	z-index: 1;
+	transition: 400ms ease all;
+}
+
+.centerline4 {
+transition: 400ms ease all; 
+margin-top: 15px;
+width: 53px;
+transform: rotate(45deg);
+	transform-origin: 10% 10%;
+	height: 3px;
+	
+}
+
+.centerline2 {
+	transition: 400ms ease all;
+	margin-top: auto;
+	margin-top: 5px;
+	width: 50px;
+	height: 5px;
+	background-color: black;
+	margin-left: -60px;
+	
+}
+
+.centerline24 {
+	transition: 400ms ease all;
+transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+	width: 53px;
+	height: 3px;
+}
+
+
+.empty:hover {
+	background-color: white;
+}
+
