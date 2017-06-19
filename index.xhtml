@@ -33,6 +33,7 @@
 		
 		<td class="td2" id="td2">
 			<object id="c1" class="centerline" ></object>
+			<object class="midline"></object>
 			<object id="c2" class="centerline2"></object>
 			</td>
 			
@@ -46,6 +47,7 @@ $(document).ready(function(){
     $("table").click(function(){
         $(".centerline").toggleClass("centerline4");
 		$(".centerline2").toggleClass("centerline24");
+		$(".midline").toggleClass("midline4");
 		$(".pages").toggle();
     });
 });

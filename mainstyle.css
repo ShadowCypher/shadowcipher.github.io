@@ -154,6 +154,15 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@-webkit-keyframes heightpages {
+	from {
+		height: 0px;
+	}
+	to {
+		height: 200px;
+	}
+}
 hr.style1 {
   border-top: 1px thin solid #FFFFFF; }
 
@@ -401,9 +410,22 @@ a:hover {
 .pages {
   width: 100%;
   text-align: center;
+  max-height: 135px;
   background-color: white; 
-	transition: 400ms ease all''
+  transition: 400ms ease all;
+  -webkit-animation: heightpages 1.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: heightpages 1.5s;
+  /* Firefox < 16 */
+  -ms-animation: heightpages 1.5s;
+  /* Internet Explorer */
+  -o-animation: heightpages 1.5s;
+  /* Opera < 12.1 */
+  animation: heightpages 1.5s;
+	z-index: 1;
+	position: absolute;
 }
+
 
 .td3 {
   text-align: center;
@@ -523,7 +545,7 @@ transform: rotate(45deg);
 	width: 50px;
 	height: 5px;
 	background-color: black;
-	margin-left: -60px;
+	margin-left: -58px;
 	
 }
 
@@ -538,5 +560,30 @@ transform: rotate(-45deg);
 
 .empty:hover {
 	background-color: white;
+}
+
+.midline {
+	transition: 600ms ease all;
+	z-index: 2;
+	position: absolute;
+	width: 50px;
+	height: 5px;
+	margin-top: 30px;
+	background-color: black;
+	margin-left: -58px;
+	
+	
+}
+
+.midline4 {
+	transition: 600ms ease all;
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	width: 43px;
+	height: 3px;
+	margin-top: 30px;
+	background-color: black;
+	margin-left: -60px;
 }
 
