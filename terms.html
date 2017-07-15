@@ -1,84 +1,90 @@
 <!DOCTYPE html>
-<style>
-
-	body {
-		background-color: #f1f1f1;
-	}
-
-</style>
 
 <html>
-<link href="mainstyle.css" type="text/css" rel="stylesheet">
-<!---FONTS---->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" >
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-<!---SCRIPTS---->
+<meta charset="UTF-8"/>
+<link href="mainstyle.css" type="text/css" rel="stylesheet"/>
+<!--FONTS-->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"/>
+<!--SCRIPTS-->
 <script src="js/jquery-1.11.3.min.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<!---METAS---->
+<!--METAS-->
 <meta name="viewport" content="width=device-width"/>
 <meta name="description" content="Welcome to Hypercharged's official website! Besides cars displayed on our channel, this is a gateway to one-on-one communication with the very creators of the channel!" />
-<meta name="google-signin-client_id" content="810878558403-nqh57b69ujjjhkucltgit0l69blu8hjr.apps.googleusercontent.com">
-<meta charset="UTF-8">
-<!---3,2,1 MAIN!---->
+<meta name="google-signin-client_id" content="810878558403-nqh57b69ujjjhkucltgit0l69blu8hjr.apps.googleusercontent.com"/>
+<!--3,2,1 MAIN!-->
 <head>
-<title>Hypercharged - Main Page</title>
-<link rel="icon" href="Resources/favicon.png" type="image/png">
+
+
+<title>Hypercharged - Contact Us</title>
+
+<link rel="icon" href="Resources/favicon.png" type="image/png"/>
 </head>
-<body style="background-color: #f1f1f1;">
-  <div class="menubar" width="100%;">
-  		<tr>
+<body>
+  <div class="menubar">
+  		
   		
   		<div class="mobile">
-		<td class="td1"><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-top: 5px" class="imgfull"></td>
+  		<table class="empty">
+  		<tr class="empty">
+		<td class="td1"><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40" width="56" style="margin-top: 15px" class="imgfull" alt="logo"/></td>
 		
-		<td class="td2"><img src="Resources/navbar.png" width="35" height="auto" id="nav" /></td>
-		 
- 		 <script>
-		
-		
-    		$( "#nav" ).click(function() {
-				$( ".pages" ).toggle();
-				$("#nav").toggleClass('rotateClick');
-			});
-			 
+		<td class="td2" id="td2">
+			<object id="c1" class="centerline" ></object>
+			<object class="midline"></object>
+			<object id="c2" class="centerline2"></object>
+			</td>
 			
-    	</script>
-  		</div>
+		 
+ 	
+  		
 	  	</tr>
-	  	
-		
- 	  
-  	  <div class="fullmenu">
+			</table>
+	  	<script>
+$(document).ready(function(){
+    $("table").click(function(){
+        $(".centerline").toggleClass("centerline4");
+		$(".centerline2").toggleClass("centerline24");
+		$(".midline").toggleClass("midline4");
+		$(".pages").toggle();
+    });
+});
+</script>
+	  	</div>
+	  	 <div class="fullmenu">
 	  <ul>
-    	<li><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40px" width="56px" style="margin-bottom: 15px" class="imgfull"></li>
+    	<li><img src="Resources/headlogo.png" onclick="location.href='https://shadowcypher.github.io/shadowcipher.github.io'" height="40" width="56" style="margin-bottom: 15px" class="imgfull" alt="logo"/></li>
 	    <li><a onclick="location.href='news'" >News</a></li>
-	    <li><a onclick="location.href='contact'" >Contact</a></li>
+	    <li><a onclick="location.href='contact'"> Contact</a></li>
 	    
 	    <li><a onclick="location.href='about'" >About</a></li>
 	    <li><a onclick="location.href='shop'">Shop</a></li>
 
       </ul>
 	</div>
-	 </div>
+	</div>
+		
+ 	  
+  	 
+
 	 
 	
-<div class="header">
+<div class="header" style="background-image: linear-gradient(#f1f1f1,#f1f1f1); margin-top: 0px;">
 	<div class="pages">
- 	<table>
+ 	<table class="empty">
  	
-	 	<tr width="100%;">
-	 	<td class="td3" colspan="2" onclick="location.href='news'">News</td>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='news'"><span class="navtext">News</span></td>
 	 	</tr>
-	 	<tr width="100%;">
-	 	<td class="td3" colspan="1" onclick="location.href='contact'">Contact</td>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='contact'"><span class="navtext">Contact</span></td>
 	 	</tr>
-	 	<tr width="100%;">
-	 	<td class="td3" colspan="1" onclick="location.href='about'">About</td>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='about'"><span class="navtext">About</span></td>
 	 	</tr>
-	 	<tr width="100%;">
-	 	<td class="td3" colspan="1" onclick="location.href='shop'" >Shop</td>
+	 	<tr>
+	 	<td class="td3" colspan="2" onclick="location.href='shop'" ><span class="navtext">Shop</span></td>
 	 	</tr>
 	 	
 	 	

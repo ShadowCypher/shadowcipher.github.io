@@ -587,3 +587,11 @@ transform: rotate(-45deg);
 	margin-left: -60px;
 }
 
+.navtext {
+	background-image: linear-gradient(to left,#f857a6, #ff5858 );
+	background-clip: text;
+	color: transparent;
+	  -webkit-background-clip: text;
+
+}
+
